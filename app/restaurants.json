@@ -1,0 +1,134 @@
+{
+  "restaurants": [
+    {
+        "id": 1,
+        "name": "Atmosphere6",
+        "menu":  {
+                "Starter": [
+                    {"dishname": "Veg65", "price": 100},
+                    {"dishname": "Chicken Chilli", "price": 150},
+                    {"dishname": "Dry Manchurian", "price": 80}
+                ],
+                "MainCourse": [
+                    {"dishname": "Murg Musallam", "price": 180},
+                    {"dishname": "Chicken Handi", "price": 150},
+                    {"dishname": "Paneer Tikka", "price": 120}
+                ],
+                "Breads": [
+                    {"dishname": "Tandoor Roti", "price": 20},
+                    {"dishname": "Butter Nan", "price": 40},
+                    {"dishname": "Chapati", "price": 15}
+                ],
+                "RiceBiryani": [
+                    {"dishname": "Jira Rice", "price": 70},
+                    {"dishname": "Chicken Biryani", "price": 120},
+                    {"dishname": "Veg Pulav", "price": 100}
+                ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Taj",
+        "menu": {
+                "Starter": [
+                    {"dishname": "French Fries", "price": 100},
+                    {"dishname": "Chicken Chilli", "price": 150},
+                    {"dishname": "Dry Manchurian", "price": 80}
+                ],
+                "MainCourse": [
+                    {"dishname": "Murg Musallam", "price": 180},
+                    {"dishname": "Mutton Handi", "price": 180},
+                    {"dishname": "Paneer Tikka", "price": 120}
+                ],
+                "Breads": [
+                    {"dishname": "Tandoor Roti", "price": 20},
+                    {"dishname": "Butter Nan", "price": 40},
+                    {"dishname": "Roomali Roti", "price": 45}
+                ],
+                "RiceBiryani": [
+                    {"dishname": "Jira Rice", "price": 70},
+                    {"dishname": "Chicken Biryani", "price": 120},
+                    {"dishname": "Veg Pulav", "price": 100}
+                ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Anonymous",
+        "menu": {
+                "Starter": [
+                    {"dishname": "Veg65", "price": 100},
+                    {"dishname": "Chicken Chilli", "price": 150},
+                    {"dishname": "Tomato Soup", "price": 80}
+                ],
+                "MainCourse": [
+                    {"dishname": "Murg Musallam", "price": 180},
+                    {"dishname": "Chicken Handi", "price": 150},
+                    {"dishname": "Veg Maratha", "price": 120}
+                ],
+                "Breads": [
+                    {"dishname": "Tandoor Roti", "price": 20},
+                    {"dishname": "Butter Nan", "price": 40},
+                    {"dishname": "Chapati", "price": 15}
+                ],
+                "RiceBiryani": [
+                    {"dishname": "Jira Rice", "price": 100},
+                    {"dishname": "steam rice", "price": 70},
+                    {"dishname": "Veg Pulav", "price": 110}
+                ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Chillies",
+        "menu": {
+                "Starter": [
+                    {"dishname": "Veg65", "price": 100},
+                    {"dishname": "Chicken Chilli", "price": 150},
+                    {"dishname": "Dry Manchurian", "price": 80}
+                ],
+                "MainCourse": [
+                    {"dishname": "Veg Kolhapuri", "price": 180},
+                    {"dishname": "Chicken Handi", "price": 150},
+                    {"dishname": "Paneer Tikka", "price": 120}
+                ],
+                "Breads": [
+                    {"dishname": "Tandoor Roti", "price": 20},
+                    {"dishname": "Butter Nan", "price": 40},
+                    {"dishname": "Chapati", "price": 15}
+                ],
+                "RiceBiryani": [
+                    {"dishname": "Jira Rice", "price": 70},
+                    {"dishname": "Chicken Biryani", "price": 120},
+                    {"dishname": "Veg Pulav", "price": 100}
+                ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Carnival",
+        "menu": {
+                "Starter": [
+                    {"dishname": "Veg65", "price": 100},
+                    {"dishname": "Chicken Chilli", "price": 150},
+                    {"dishname": "Dry Manchurian", "price": 80}
+                ],
+                "MainCourse": [
+                    {"dishname": "Murg Musallam", "price": 180},
+                    {"dishname": "Chicken Handi", "price": 150},
+                    {"dishname": "Paneer Tikka", "price": 120}
+                ],
+                "Breads": [
+                    {"dishname": "Tandoor Roti", "price": 20},
+                    {"dishname": "Butter Nan", "price": 40},
+                    {"dishname": "Chapati", "price": 15}
+                ],
+                "RiceBiryani": [
+                    {"dishname": "Jira Rice", "price": 70},
+                    {"dishname": "Chicken Biryani", "price": 120},
+                    {"dishname": "Veg Pulav", "price": 100}
+                ]
+        }
+    }
+  ]
+}
