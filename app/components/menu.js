@@ -14,17 +14,11 @@ import {Actions} from 'react-native-router-flux';
 var { height, width } = Dimensions.get('window');
 
 class Menu extends Component {
-    constructor(props) {
-        super(props);
-
-        this.placeOrder = this.placeOrder.bind(this);
-    }
-
     componentDidMount() {
         this.props.getData();
     }
 
-    placeOrder() {
+    placeOrder = ()=>{
         this.props.clearOrderState();
         if(this.props.noItems>0) {
             alert('Your order had been successfully placed!');
@@ -63,21 +57,24 @@ class Menu extends Component {
                             this.props.orderedDishes.map((orderedDish) => {
                                 if(orderedDish.dishname == dish.dishname) {
                                     button = <View style={styles.modifiedButton}>
-                                            <TouchableOpacity 
-                                                onPress = {() => this.props.removeOrder(dish.price, dish.dishname)}
-                                                style={{paddingLeft: 6, paddingRight: 5}}
-                                            >
-                                                <Text style={{fontSize: 18, color: 'white'}}>{'--'}</Text>
-                                            </TouchableOpacity>
-                                            <Text style={{backgroundColor: 'white', color: '#27bd86', paddingLeft: 7,
-                                                        paddingRight: 7}}>{orderedDish.number}</Text>
-                                            <TouchableOpacity
-                                                onPress = {() => this.props.addOrder(dish.price, dish.dishname)}
-                                                style={{paddingLeft: 5, paddingRight: 8}}
-                                            >
-                                                <Text style={{fontSize: 18, color: 'white'}}>{'+'}</Text>
-                                            </TouchableOpacity>
-                                        </View>
+                                                <TouchableOpacity 
+                                                    onPress = {() => this.props.removeOrder(dish.price, dish.dishname)}
+                                                    style={{paddingLeft: 8}}
+                                                >
+                                                    <Text style={{fontSize: 18, color: 'white'}}>{'-'}</Text>
+                                                </TouchableOpacity>
+                                                <Text
+                                                    style={{backgroundColor: 'white', color: '#27bd86', paddingLeft: 7, paddingRight: 7}}
+                                                >
+                                                    {orderedDish.number}
+                                                </Text>
+                                                <TouchableOpacity
+                                                    onPress = {() => this.props.addOrder(dish.price, dish.dishname)}
+                                                    style={{paddingRight: 8}}
+                                                >
+                                                    <Text style={{fontSize: 18, color: 'white'}}>{'+'}</Text>
+                                                </TouchableOpacity>
+                                            </View>
                                 }
                             });
                             if(button == '') {
@@ -113,9 +110,7 @@ class Menu extends Component {
                     loop={false}
                     showsPagination={true}
                 >{
-                    menuView.map((dish) =>{
-                        return(dish);
-                    })
+                    menuView.map(dish => dish)
                 }
                 </Swiper>
                 <View style={{flex: 0.15, flexDirection: 'row', width: width}}>
